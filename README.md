@@ -2,7 +2,7 @@
 
 ##Task:
 
-Consider input is s = "leetcode" and k = 3
+Consider input is s = "leetcode" & k = 3
 
 Now the task is to have substrings from main string based on k value and understand the count of vowels in each substring then return the maximum count of vowels in all substrings
 
