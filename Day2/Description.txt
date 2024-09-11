@@ -1,0 +1,53 @@
+## Day-2 11/09/2024
+
+##Task: Two Sum
+
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
+
+ 
+
+##Example 1:
+
+    Input: nums = [2,7,11,15], target = 9
+    Output: [0,1]
+    Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+
+##Example 2:
+
+    Input: nums = [3,2,4], target = 6
+    Output: [1,2]
+
+##Example 3:
+
+    Input: nums = [3,3], target = 6
+    Output: [0,1]
+ 
+
+##Constraints:
+
+    2 <= nums.length <= 104
+    -109 <= nums[i] <= 109
+    -109 <= target <= 109
+
+## Time Complexity:
+
+Outer Loop: The outer loop runs n times, where n is the length of nums.
+
+Inner Loop: The inner loop is dependent on the current value of i. Specifically, it runs from last_ele down to i + 1, which results 
+            in a decreasing number of iterations as i increases.
+
+The number of iterations in the inner loop for a given i is (n - 1 - i).
+
+This simplifies to O(n^2).
+
+##Space Complexity:
+
+Space for the List lst: In the worst case, the list lst stores the indices of two numbers, so it uses O(2) space, which simplifies to O(1).
+
+Space for Variables: The variables last_ele, i, and j use O(1) space.
+
+Overall Space Complexity: O(1)
