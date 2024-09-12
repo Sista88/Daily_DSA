@@ -41,3 +41,25 @@ Constraints:
 
     1 <= word1.length, word2.length <= 100
     word1 and word2 consist of lowercase English letters.
+
+
+Time Complexity:
+Calculating lengths (len(word1) and len(word2)):
+
+O((n+m)^2).
+
+Space Complexity:
+Space for storing variables:
+
+Variables like word1_len, word2_len, min_len, and final_i require 
+
+O(1) space.
+
+Space for st:
+
+The final string st will hold a combination of word1 and word2, which requires 
+
+O(n+m) space.
+Thus, the space complexity is 
+
+O(n+m).
